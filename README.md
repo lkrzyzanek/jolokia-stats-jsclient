@@ -1,6 +1,6 @@
 # Jolokia Stats JS Client
 
-This JS client provides basic statistics from Jolokia server as back-end
+This JS client provides basic statistics from [Jolokia server](https://jolokia.org/) as back-end
 
 ## Features
 
