@@ -35,11 +35,14 @@ Metrics = function () {
 	};
 	this.client = client;
 
+	var connect = function() {
+		c = null;
+		client();
+		return false;
+	};
+
 	var init = function () {
-		$("#connect").click(function() {
-			c = null;
-			client();
-		});
+		$("#connectForm").submit(connect);
 		$("#memory").click(memory);
 		$("#cluster").click(cluster);
 		$("#threadDump").click(threadDump);
