@@ -2,7 +2,15 @@ Metrics = function () {
 	var defaultParams = function () {
 		return {
 			username: $("#username").val(),
-			password: $("#password").val()
+			password: $("#password").val(),
+			ajaxError: function(resp) {
+				console.log(resp);
+				alert("Ajax error. " + resp.status + ", " + resp.statusText);
+			},
+			error: function(e) {
+				console.log(e);
+				alert("Jolokia error: " + e);
+			}
 		}
 	};
 	this.defaultParams = defaultParams;
