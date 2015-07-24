@@ -1,0 +1,54 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Jolokia Stats Client</title>
+	<style type="text/css">
+		#result td {
+			vertical-align: top;
+		}
+		#url {
+			width: 300px;
+		}
+	</style>
+	<!-- DataTables -->
+	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Jolokia -->
+	<script type="text/javascript" src="javascript/jolokia-min.js"></script>
+	<script type="text/javascript" src="javascript/jolokia-simple-min.js"></script>
+
+	<!-- DataTables -->
+	<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script>
+
+</head>
+
+
+<body>
+<h1>Jolokia Stats Client</h1>
+
+<div>
+	Url: <input id="url" type="text" value=""/>&nbsp;
+	Username: <input id="username" type="text" value=""/>&nbsp;
+	Password: <input id="password" type="text" value=""/>&nbsp;
+	<input type="button" id="connect" value="Connect"/>
+	<span id="jolokiainfo"></span>
+
+</div>
+<hr/>
+
+<div>
+	<input type="button" id="memory" value="Memory"/>
+	<input type="button" id="cluster" value="Cluster Nodes"/>
+	<input type="button" id="threadDump" value="Thread Dump"/>
+	<input type="button" id="gc" value="Garbage Collection"/>
+</div>
+
+<div id="resultArea">
+</div>
+
+<script type="text/javascript" src="metrics.js"></script>
+</body>
+
+</html>
