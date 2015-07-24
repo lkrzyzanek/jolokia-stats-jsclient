@@ -11,8 +11,13 @@ This JS client provides basic statistics from Jolokia server as back-end
 
 ## How to use it
 
-Run metrics.html in browser directly from your filesystem or upload it to server all files.
-Put to the field `url` the full path to Jolokia servlet.
+You can run the client `metrics.html` from:
+
+1. Filesystem (clonned git repo)
+2. Upload all files to your web server
+3. From github at https://rawgit.com/lkrzyzanek/jolokia-stats-jsclient/master/metrics.html
+
+Once you have loaded the page put to the field `url` the full path to Jolokia servlet.
 
 ### Secured Jolokia servlet via CORS
 
